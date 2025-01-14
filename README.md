@@ -1,6 +1,6 @@
-# postcss-px-to-viewport-8-plugin
+# postcss-px-to-viewport-9-plugin
 
-将 px 单位转换为视口单位的 (vw, vh, vmin, vmax) 的 [PostCSS](https://github.com/postcss/postcss) 插件.
+将 px 单位转换为视口单位的 (vw, vh, vmin, vmax) 的 [PostCSS](https://github.com/postcss/postcss) 插件, 基于[postcss-px-to-viewport-8-plugin](https://github.com/lkxian888/postcss-px-to-viewport-8-plugin)更改
 
 ## 问题
 
@@ -13,7 +13,7 @@ postcss-px-to-viewport: postcss.plugin was deprecated. Migration guide: https://
 
 ## 解决
 
-`postcss-px-to-viewport` 替换 `postcss-px-to-viewport-8-plugin`
+`postcss-px-to-viewport` 替换 `postcss-px-to-viewport-9-plugin`
 
 注意对应库版本
 
@@ -91,9 +91,9 @@ postcss-px-to-viewport: postcss.plugin was deprecated. Migration guide: https://
 
 ```js
 
-npm install postcss-px-to-viewport-8-plugin -D
+npm install postcss-px-to-viewport-9-plugin -D
 or
-yarn add postcss-px-to-viewport-8-plugin -D
+yarn add postcss-px-to-viewport-9-plugin -D
 ```
 
 ## 配置参数使用与 [postcss-px-to-viewport](https://www.npmjs.com/package/postcss-px-to-viewport) 一致
@@ -192,7 +192,7 @@ There are several more reasons why your pixels may not convert, the following op
 module.exports = {
   plugins: {
     ...
-    'postcss-px-to-viewport-8-plugin': {
+    'postcss-px-to-viewport-9-plugin': {
       viewportWidth: 1920,
       exclude: [/node_modules/],
       unitToConvert: 'px',
@@ -208,7 +208,7 @@ module.exports = {
 
 ```ts
 import { defineConfig } from 'vite';
-import postcsspxtoviewport8plugin from 'postcss-px-to-viewport-8-plugin';
+import postcsspxtoviewport8plugin from 'postcss-px-to-viewport-9-plugin';
 
 export default defineConfig({
   css: {

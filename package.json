@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lkxian888/postcss-px-to-viewport-8-plugin"
+    "url": "https://github.com/LeeYuze/postcss-px-to-viewport-9-plugin"
   },
   "scripts": {
     "build": "father build",
@@ -52,7 +52,7 @@
     "example": "example"
   },
   "keywords": [
-    "postcss-px-to-viewport-8-plugin",
+    "postcss-px-to-viewport-9-plugin",
     "viewport",
     "postcss",
     "postcss-plugin",
@@ -63,6 +63,6 @@
     "vmin",
     "vmax"
   ],
-  "author": "lkxian888",
+  "author": "liyuze",
   "license": "MIT"
 }
