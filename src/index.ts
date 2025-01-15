@@ -209,15 +209,24 @@ const postcssPxToViewport = (options: OptionType) => {
       }
 
       if (opts.minViewportWidth && originalRules.length > 0) {
-        const root = new AtRule({
+        const maxWidthMediaQuery = new AtRule({
           params: `(max-width: ${opts.minViewportWidth}px)`,
           name: 'media',
         });
 
-        originalRules.forEach(function(rule) {
-          root.append(rule);
+        // **去重逻辑**: 用 Map 记录 selector，避免重复规则
+        const ruleMap = new Map<string, AtRule>();
+
+        originalRules.forEach((rule) => {
+          const selector = rule.selector;
+          if (!ruleMap.has(selector)) {
+            ruleMap.set(selector, rule);
+            maxWidthMediaQuery.append(rule);
+          }
         });
-        css.append(root);
+
+        // 只追加一次，避免重复
+        css.append(maxWidthMediaQuery);
       }
     },
   };
