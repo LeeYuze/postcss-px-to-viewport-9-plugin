@@ -1,12 +1,12 @@
 {
   "name": "postcss-px-to-viewport-9-plugin",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
   "description": "css-vw",
   "authors": {
-    "name": "liyuze",
+    "name": "leeyuze",
     "email": "qw110288qw@vip.qq.com"
   },
   "repository": {
